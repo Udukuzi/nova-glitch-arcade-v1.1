@@ -1,0 +1,23 @@
+IMPORTANT: Add Social Logo Files
+==================================
+
+Place your logo PNG files in the following locations:
+
+1. X (Twitter) Logo:
+   - File path: frontend/public/x-logo.png
+   - Recommended size: 48x48 pixels (or square aspect ratio)
+   - Format: PNG with transparent or black background
+
+2. DexScreener Logo:
+   - File path: frontend/public/dexscreener-logo.png  
+   - Recommended size: 48x48 pixels (or square aspect ratio)
+   - Format: PNG with transparent or black background
+
+All logos are now set to uniform 48x48 size for consistency.
+
+The logos will automatically be used across:
+- SplashScreen (startup page)
+- Login page
+- Footer (main app)
+
+If the images don't exist, fallback text will be displayed.

@@ -1,0 +1,243 @@
+/* Mobile Responsive Styles for Nova Glitch Arcade */
+
+/* Mobile devices (320px - 768px) */
+@media screen and (max-width: 768px) {
+  /* Global adjustments */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header mobile fixes */
+  .container {
+    padding: 0 12px !important;
+  }
+
+  /* Hero Page mobile */
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .hero-buttons button {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Battle Arena Modal mobile */
+  .modal-content {
+    padding: 16px !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+  }
+
+  .battle-modes-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Swap Modal mobile */
+  .swap-modal {
+    width: 95% !important;
+    margin: 10px !important;
+  }
+
+  .token-input {
+    font-size: 20px !important;
+  }
+
+  /* Game cards mobile */
+  .game-grid {
+    grid-template-columns: 1fr !important;
+    padding: 12px !important;
+  }
+
+  .game-card {
+    min-height: auto !important;
+  }
+
+  /* Sidebar mobile */
+  aside {
+    width: 85vw !important;
+    max-width: 340px !important;
+  }
+
+  /* Leaderboard mobile */
+  .leaderboard-table {
+    font-size: 12px !important;
+  }
+
+  .leaderboard-row {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 8px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Settings modal mobile */
+  .settings-content {
+    padding: 16px !important;
+  }
+
+  /* Tokenomics modal mobile */
+  .tokenomics-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer mobile */
+  footer {
+    padding: 20px 12px !important;
+    text-align: center !important;
+  }
+
+  /* Text sizes mobile */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Button sizes mobile */
+  button {
+    min-height: 44px !important; /* Apple HIG recommendation */
+    touch-action: manipulation !important; /* Prevent zoom on double tap */
+  }
+
+  /* AI Agent indicator mobile */
+  .ai-agent-status {
+    position: fixed !important;
+    top: 60px !important;
+    right: 10px !important;
+    font-size: 10px !important;
+  }
+
+  /* Form inputs mobile */
+  input, select, textarea {
+    font-size: 16px !important; /* Prevent zoom on iOS */
+    min-height: 44px !important;
+  }
+
+  /* Wallet button mobile */
+  .wallet-adapter-button {
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+}
+
+/* Small mobile devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+  /* Extra small adjustments */
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .game-title {
+    font-size: 1rem !important;
+  }
+
+  /* Stack everything vertically */
+  .flex-row {
+    flex-direction: column !important;
+  }
+
+  /* Reduce paddings */
+  .px-6 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .py-4 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+}
+
+/* Tablet devices (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet specific adjustments */
+  .container {
+    max-width: 90% !important;
+  }
+
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .battle-modes-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Touch-specific styles */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects on touch devices */
+  button:hover {
+    transform: none !important;
+  }
+
+  a:hover {
+    color: inherit !important;
+  }
+
+  /* Increase tap targets */
+  .clickable {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+}
+
+/* PWA standalone mode */
+@media all and (display-mode: standalone) {
+  /* Styles for when app is installed as PWA */
+  .pwa-header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .pwa-footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Landscape mobile */
+@media screen and (max-width: 896px) and (orientation: landscape) {
+  /* Reduce vertical spacing in landscape */
+  .hero-section {
+    min-height: auto !important;
+    padding: 20px !important;
+  }
+
+  .modal-content {
+    max-height: 80vh !important;
+  }
+
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Sharper borders and shadows for retina displays */
+  .border {
+    border-width: 0.5px !important;
+  }
+}

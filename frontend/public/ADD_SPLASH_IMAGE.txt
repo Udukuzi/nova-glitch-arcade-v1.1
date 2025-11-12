@@ -1,0 +1,25 @@
+IMPORTANT: SAVE YOUR SPLASH IMAGE HERE
+=======================================
+
+Please save your splash screen image as:
+  splash-image.png
+
+Location: frontend/public/splash-image.png
+
+The image should be:
+- PNG format (recommended)
+- Good resolution (1200x800px or similar)
+- Under 500KB for fast loading
+- The "Nova Arcade Glitch" neon logo image you provided
+
+Once you save the image here, it will automatically display on the splash screen!
+
+Current setup:
+✅ Splash screen component created
+✅ Social media icons (Twitter, Discord, Telegram) - beneath image
+✅ Launch App button - beneath social icons
+✅ Font Awesome icons loaded
+✅ Fade animations ready
+
+Just add your image file and you're ready to go!
+

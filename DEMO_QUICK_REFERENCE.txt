@@ -1,0 +1,108 @@
+═══════════════════════════════════════════════════════════════
+  BATTLE ARENA DEMO - QUICK REFERENCE (Print This!)
+═══════════════════════════════════════════════════════════════
+
+🚀 SETUP:
+  1. Open: http://localhost:5173
+  2. Click: Menu (☰) → Battle Arena
+  3. Test: Click Kiddies → Simulate Entry (make sure it works)
+
+📝 NARRATION SCRIPT (2-3 Minutes):
+
+[0:00-0:15] OPENING
+  SHOW: Battle Arena modal
+  SAY: "This is Nova Glitch Arcade's Battle Arena - a competitive 
+       gaming platform powered by an AI agent that autonomously 
+       manages bets and payouts using the x402 protocol on Solana."
+
+[0:15-0:30] MODES
+  SHOW: Hover over each mode
+  SAY: "We have five game modes with age-appropriate tiers: 
+       Kiddies for 7-12 at 5 USDC, Teenies for 13-17 at 10 USDC, 
+       Anyone at 15 USDC, Pro for adults at 250 USDC, and free 
+       Practice mode. All prizes calculated dynamically in NAG."
+
+[0:30-0:45] CONFIRMATION
+  SHOW: Click Kiddies Mode
+  SAY: "Let's enter Kiddies Mode. 5 USDC entry, 96% to winner - 
+       that's 22,857 NAG tokens. Highest score wins."
+
+[0:45-1:00] START
+  SHOW: Click "Simulate Entry"
+  SAY: "When you click enter, the AI agent kicks off a five-step 
+       autonomous process. Let me walk you through each step."
+
+[1:00-1:20] STEP 1: SWAP
+  SHOW: Step 1 animation
+  SAY: "Step 1: The system swaps USDC to NAG via Jupiter 
+       aggregator, finding the best route across all Solana DEXes. 
+       This is a real mainnet swap using Jupiter V6."
+
+[1:20-1:40] STEP 2: DEPOSIT
+  SHOW: Step 2 animation
+  SAY: "Step 2: The AI agent creates an x402 payment request and 
+       deposits funds to smart contract escrow. The money is locked 
+       until game completes - completely trustless."
+
+[1:40-2:00] STEP 3: AI VERIFICATION
+  SHOW: Step 3 animation with checks
+  SAY: "Step 3: The AI agent verifies wallet authenticity, checks 
+       transaction history, analyzes behavioral patterns, and runs 
+       anti-cheat validation. Notice the checks appearing - wallet 
+       verified, history checked, patterns analyzed, anti-cheat passed."
+
+[2:00-2:15] STEP 4: PLAY
+  SHOW: Step 4 with AI indicator
+  SAY: "Step 4: The game starts with real-time AI monitoring. The 
+       green indicator shows the AI is actively watching for cheating. 
+       If you cheat, you get progressive penalties: 24-hour ban, 
+       then 7-day ban, then permanent ban with wallet blacklist."
+
+[2:15-2:30] STEP 5: PAYOUT
+  SHOW: Step 5 animation
+  SAY: "Step 5: Game completes, AI validates the score, and the 
+       winner receives 22,857 NAG tokens instantly. No manual 
+       processing, no waiting - just autonomous settlement 
+       verified on-chain."
+
+[2:30-2:45] COMPLETION
+  SHOW: Waitlist screen
+  SAY: "That's the complete flow. Right now this is a demo showing 
+       the architecture. The games are fully playable, the Jupiter 
+       swaps are real, but we're waiting for audited smart contracts 
+       before handling real competition money. Launch is planned 
+       for Q1 2026."
+
+[2:45-3:00] CLOSING
+  SHOW: Close modal
+  SAY: "This AI agent autonomously handles everything - swaps, 
+       escrow, verification, monitoring, and payouts. All on Solana, 
+       all trustless, all transparent. That's Nova Glitch Arcade's 
+       Battle Arena."
+
+═══════════════════════════════════════════════════════════════
+
+✅ KEY POINTS TO EMPHASIZE:
+  • AI Agent - Fully autonomous
+  • x402 Protocol - Solana payment standard
+  • Jupiter V6 - Real mainnet swaps
+  • Smart Contract Escrow - Trustless
+  • Real-time AI Monitoring - Anti-cheat
+  • Instant Payouts - No waiting
+  • Age-Appropriate Tiers - Safe for kids
+  • Progressive Penalties - Serious anti-cheat
+
+🎯 RECORDING TIPS:
+  • Speak slowly and clearly
+  • Let animations finish
+  • Don't rush
+  • Pause between sections
+  • Keep mouse movements smooth
+  • Turn off notifications
+
+⏱️ TIMING:
+  Total: 2-3 minutes
+  Each step: ~20 seconds
+  Don't go over 3 minutes!
+
+═══════════════════════════════════════════════════════════════

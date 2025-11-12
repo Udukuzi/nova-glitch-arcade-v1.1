@@ -1,0 +1,20 @@
+STARTUP SOUND FILE NEEDED
+========================
+
+To complete the game-like startup effect, add a startup sound file:
+
+File name: startup-sound.mp3
+Location: frontend/public/startup-sound.mp3
+
+The sound will automatically play when users enter the splash screen!
+
+RECOMMENDED:
+- Format: MP3, WAV, or OGG
+- Duration: 2-4 seconds (matching the animation)
+- Style: Arcade/retro game startup sound
+- Volume: Will be set to 50% by default
+
+OPTIONAL:
+If you don't have a sound file yet, the splash screen will still work perfectly,
+just without the audio. You can add it later anytime!
+

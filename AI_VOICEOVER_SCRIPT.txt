@@ -1,0 +1,120 @@
+═══════════════════════════════════════════════════════════════
+  NOVA GLITCH ARCADE - AI VOICEOVER SCRIPT
+  Copy this entire script into ElevenLabs or any AI voice generator
+═══════════════════════════════════════════════════════════════
+
+[TIMING: 0:00 - 0:15] OPENING
+═══════════════════════════════════════════════════════════════
+
+Welcome to Nova Glitch Arcade, an AI-powered competitive gaming platform built on Solana. 
+
+This demo showcases our autonomous AI agent that manages the entire competition lifecycle, from entry to payout, without any human intervention.
+
+
+[TIMING: 0:15 - 0:30] BATTLE ARENA OVERVIEW
+═══════════════════════════════════════════════════════════════
+
+This is our Battle Arena, featuring five age-appropriate game modes. 
+
+Each mode has different entry fees and prize pools, all calculated dynamically in NAG tokens based on real-time market prices. 
+
+The AI agent handles everything autonomously using the x402 payment protocol on Solana.
+
+
+[TIMING: 0:30 - 0:45] MODE SELECTION
+═══════════════════════════════════════════════════════════════
+
+We have Kiddies Mode for ages seven to twelve at five USDC entry, Teenies Mode for thirteen to seventeen at ten USDC, Anyone Mode at fifteen USDC, Pro Mode for adults at two hundred fifty USDC, and free Practice Mode. 
+
+All prizes are paid in NAG tokens with ninety-six percent of the pool going to winners.
+
+
+[TIMING: 0:45 - 1:00] ENTRY CONFIRMATION
+═══════════════════════════════════════════════════════════════
+
+Let's enter Kiddies Mode. 
+
+The confirmation shows a five USDC entry fee, with the winner receiving approximately twenty-two thousand eight hundred fifty-seven NAG tokens. 
+
+The win condition is simple: highest score wins.
+
+
+[TIMING: 1:00 - 1:30] 5-STEP SIMULATION
+═══════════════════════════════════════════════════════════════
+
+When you click enter, the AI agent executes a five-step autonomous process. 
+
+Step one: The system swaps USDC to NAG via Jupiter aggregator, finding the best route across all Solana DEXes. This is a real mainnet swap using Jupiter V6.
+
+Step two: The AI creates an x402 payment request and deposits funds to a smart contract escrow. The money is locked until the game completes, making it completely trustless.
+
+
+[TIMING: 1:30 - 2:00] AI VERIFICATION & MONITORING
+═══════════════════════════════════════════════════════════════
+
+Step three: The AI agent verifies wallet authenticity, checks transaction history, analyzes behavioral patterns, and runs anti-cheat validation. 
+
+Notice the checks appearing: wallet verified, history checked, patterns analyzed, anti-cheat passed.
+
+Step four: The game starts with real-time AI monitoring. The green indicator shows the AI is actively watching for cheating, including impossible scores, bot behavior, and timing anomalies. 
+
+If you cheat, you face progressive penalties: twenty-four hour ban, then seven-day ban, then permanent ban with wallet blacklist.
+
+
+[TIMING: 2:00 - 2:30] PAYOUT & JUPITER
+═══════════════════════════════════════════════════════════════
+
+Step five: Game completes, AI validates the score, and the winner receives twenty-two thousand eight hundred fifty-seven NAG tokens instantly. 
+
+No manual processing, no waiting, just autonomous settlement verified on-chain.
+
+Our Jupiter V6 integration provides real-time token swaps with best route finding, price impact calculations, and slippage protection across all Solana DEXes.
+
+
+[TIMING: 2:30 - 2:45] CLOSING
+═══════════════════════════════════════════════════════════════
+
+This is Nova Glitch Arcade: where an autonomous AI agent manages competitive gaming on Solana. 
+
+All operations are trustless, transparent, and instant. 
+
+The games are fully playable, Jupiter swaps are real, and we're launching with audited smart contracts in Q1 2026.
+
+Thank you for watching.
+
+
+═══════════════════════════════════════════════════════════════
+  END OF SCRIPT
+  Total Duration: Approximately 2 minutes 45 seconds
+═══════════════════════════════════════════════════════════════
+
+INSTRUCTIONS FOR AI VOICE GENERATOR:
+═══════════════════════════════════════════════════════════════
+
+1. Copy everything between the timing markers
+2. Paste into ElevenLabs, Murf.ai, or your chosen AI voice tool
+3. Recommended voices:
+   - ElevenLabs: "Adam" (professional male) or "Rachel" (professional female)
+   - Murf.ai: "Ken" or "Natalie"
+4. Settings:
+   - Speed: Normal (1.0x)
+   - Stability: 50-60%
+   - Clarity: 70-80%
+5. Generate and download MP3
+6. Use in video editor to sync with your silent screen recording
+
+TIPS FOR BEST RESULTS:
+═══════════════════════════════════════════════════════════════
+
+- Add slight pauses by using periods and commas
+- Numbers are spelled out for better pronunciation
+- Technical terms are clearly separated
+- Timing markers help you sync with video
+- Total script is under 500 words for natural pacing
+
+ALTERNATIVE: If character limit is an issue, split into 3 parts:
+- Part 1: Opening to Mode Selection (0:00-0:45)
+- Part 2: Entry to AI Features (0:45-2:00)
+- Part 3: Payout to Closing (2:00-2:45)
+
+Then combine the 3 MP3 files in your video editor.

@@ -1,0 +1,30 @@
+{
+  "name": "nova-glitch-arcade",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../frontend && npm install",
+    "dev": "powershell -ExecutionPolicy Bypass -File start-dev.ps1",
+    "arcade": "powershell -ExecutionPolicy Bypass -File start-nova-arcade-auto.ps1",
+    "dev:server": "cd server && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:server": "cd server && npm run build",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "description": "Complete arcade gaming platform with wallet integration, staking, and multi-game support"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

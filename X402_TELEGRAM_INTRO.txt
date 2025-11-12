@@ -1,0 +1,194 @@
+🎮 NOVA GLITCH ARCADE - X402 HACKATHON SUBMISSION 🤖
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 PROJECT OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AI-Powered Competitive Gaming Platform with x402 Autonomous Payment Protocol
+
+We built an AI agent that autonomously manages competitive gaming bets, validates results, and settles payments using x402 micropayment protocol on Solana.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ X402 HACKATHON REQUIREMENTS MET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Open Source Code
+✅ x402 Protocol Integration
+✅ Deployed to Solana Mainnet
+✅ 3-Minute Demo Video
+✅ Complete Documentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 HACKATHON TRACKS WE'RE TARGETING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏆 Best x402 Agent Application
+   → AI agent autonomously manages game bets & payouts
+
+🏆 Best x402 API Integration
+   → Micropayments for competitive gaming ($5-$250 USDC)
+
+🏆 Best AgentPay Demo (Sponsor Bounty)
+   → AI agents pay for game services via x402 + USDC
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🤖 X402 IMPLEMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+AI AGENT CAPABILITIES:
+✅ Autonomous match creation
+✅ x402 payment request generation
+✅ Escrow account management
+✅ Game result validation
+✅ Automatic winner settlement
+✅ Anti-cheat monitoring
+
+X402 PAYMENT FLOW:
+1. Player enters Battle Arena mode
+2. AI agent creates x402 payment request
+3. Player deposits USDC via x402 protocol
+4. Funds locked in escrow
+5. Game completes → AI validates score
+6. Winner receives NAG tokens automatically
+7. All transactions on-chain (Solana)
+
+TECHNICAL INTEGRATION:
+• x402 facilitator endpoint: /api/x402/facilitate
+• Payment headers: X-402, X-402-Amount, X-402-Recipient
+• SPL token transfers (USDC/USDT → NAG)
+• Signature validation
+• Webhook confirmations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 INNOVATION & UNIQUENESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎮 First Gaming Platform with x402
+   No other arcade uses autonomous agent payments
+
+🤖 AI Anti-Cheat Agent
+   Real-time monitoring with progressive penalties
+   - 1st offense: 24hr ban
+   - 2nd offense: 7-day ban
+   - 3rd offense: Permanent + wallet blacklist
+
+💰 Dual Token Economy
+   Bet in stablecoins (USDC/USDT)
+   Win in $NAG tokens (25% bonus)
+
+⚡ Instant Settlement
+   No manual processing - AI agent pays winners immediately
+
+🎯 Age-Appropriate Tiers
+   Safe gaming for all ages (7-12, 13-17, 18+)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏗️ WHAT WE BUILT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FRONTEND:
+• 6 playable arcade games
+• Battle Arena with 5 competitive modes
+• x402 payment interface
+• Real-time match tracking
+• Wallet integration (Phantom, Solflare)
+
+BACKEND:
+• x402 facilitator API
+• AI validation agent
+• Escrow management
+• Payment webhooks
+• Anti-cheat system
+
+BLOCKCHAIN:
+• Solana mainnet deployment
+• SPL token handling
+• Jupiter swap integration
+• On-chain transaction verification
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 BATTLE ARENA MODES (X402 POWERED)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🦄 Kiddies (7-12): 5 USDC → ~22,857 NAG
+🎯 Teenies (13-17): 10 USDC → ~45,714 NAG
+🏆 Anyone (All Ages): 15 USDC → ~68,571 NAG
+💎 Pro (18+): 250 USDC → ~1,142,857 NAG
+🎮 Practice: FREE → No rewards
+
+All payments processed via x402 protocol
+All settlements automated by AI agent
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 TECH STACK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Solana blockchain
+• x402 payment protocol
+• Node.js + Express + TypeScript
+• React + Vite + TypeScript
+• Supabase (PostgreSQL)
+• Jupiter V6 aggregator
+• SPL tokens (USDC, USDT, NAG)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎬 DEMO VIDEO HIGHLIGHTS (3 MIN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+0:00-0:30 → Platform intro + x402 integration
+0:30-1:00 → AI agent creating payment request
+1:00-1:30 → Player deposits via x402
+1:30-2:00 → Game play + AI monitoring
+2:00-2:30 → Automatic settlement + payout
+2:30-3:00 → Technical architecture
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏆 WHY WE SHOULD WIN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ FIRST gaming platform with x402
+✅ COMPLETE x402 implementation (not partial)
+✅ PRODUCTION READY (deployed & functional)
+✅ REAL UTILITY (solves actual user needs)
+✅ AI AGENT (autonomous, not manual)
+✅ INNOVATIVE (age tiers, dual tokens, anti-cheat)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 PRIZE POOL: $135,000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Our Target Tracks:
+• Best x402 Agent Application
+• Best x402 API Integration  
+• Best AgentPay Demo (Sponsor)
+
+Estimated Prize Potential: $15K - $45K
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔗 LINKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Token: 957tKDz9GKtY3X54WuJUkhYfnNJsrAoyQQZpMjS1pump
+Demo: [Your URL]
+GitHub: [Your Repo]
+Video: [YouTube Link]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ KEY DIFFERENTIATORS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+vs Other x402 Projects:
+❌ Most: Payment demos, simple transfers
+✅ Us: Full gaming ecosystem with AI agent
+
+vs Other Gaming Projects:
+❌ Most: Manual payments, no automation
+✅ Us: Autonomous x402 agent handles everything
+
+vs Traditional Gaming:
+❌ Them: Centralized, no transparency
+✅ Us: On-chain, trustless, AI-validated
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 AUTONOMOUS GAMING PAYMENTS WITH X402 🤖

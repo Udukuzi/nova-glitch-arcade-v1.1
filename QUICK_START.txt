@@ -1,0 +1,62 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║          NOVA GLITCH ARCADE v1.1 - QUICK START GUIDE             ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+🎯 FASTEST WAY TO START:
+
+Option 1 - PowerShell Script (RECOMMENDED):
+   .\start-dev.ps1
+   (This opens both servers in separate windows automatically)
+
+Option 2 - Manual Start:
+   1. Open TWO PowerShell windows
+    
+   Terminal 1 (Backend):
+   cd server
+   npm run dev
+   
+   Terminal 2 (Frontend):
+   cd frontend
+   npm run dev
+
+   2. Open http://localhost:5173 in browser
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WHAT'S READY:
+   ✓ Backend API with wallet auth
+   ✓ 3 trials gating
+   ✓ Dark/light mode
+   ✓ Wallet modal (5 providers)
+   ✓ Game lobby with 6 games
+   ✓ Leaderboards
+   ✓ PWA support
+
+📝 BEFORE STARTING:
+   1. Make sure you've configured server/.env with Supabase keys
+   2. Run database migrations in Supabase SQL Editor
+
+🔥 NEXT STEPS:
+   - Add real game implementations
+   - Integrate wallet SDKs
+   - Add sound effects
+   - Deploy to production
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For detailed setup, see: PRODUCTION_SETUP.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

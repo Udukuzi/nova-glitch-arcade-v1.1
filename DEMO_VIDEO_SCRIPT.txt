@@ -1,0 +1,100 @@
+NOVA GLITCH ARCADE - DEMO VIDEO SCRIPT (2 MINUTES)
+=======================================================
+
+INTRO (0:00-0:15)
+- Show splash screen with neon effects
+- Pan to social media icons
+SAY: "Nova Glitch Arcade - the first token-gated arcade on Solana"
+
+TOKEN LAUNCH (0:15-0:30)
+- Switch to pump.fun tab
+- Show token page with address visible
+SAY: "Just launched on pump.fun - Contract address on screen"
+
+TOKEN GATE DEMO (0:30-0:45)
+- Back to arcade site
+- Click "Connect Wallet"
+- Phantom popup appears, approve
+- Token gate overlay appears: "Need 100,000 NAG"
+SAY: "Only holders with 100K NAG can access the arcade"
+
+PURCHASE FLOW (0:45-1:00)
+- Click "Buy $NAG Tokens" button
+- Opens pump.fun in new tab
+- Show quick buy interface
+SAY: "Simple one-click purchase on pump.fun"
+
+ACCESS GRANTED (1:00-1:15)
+- Return to arcade, refresh page
+- Token gate checks balance
+- Access granted! Gate disappears
+- Show full game lobby
+SAY: "Balance verified - welcome to the arcade!"
+
+GAMEPLAY (1:15-1:30)
+- Hover over game cards (glitch effect)
+- Click Snake game
+- Quick 10-second gameplay
+- Show score tracking
+SAY: "7 classic games with blockchain-verified scores"
+
+BATTLE ARENA (1:30-1:45)
+- Open sidebar menu
+- Click "Battle Arena"
+- Show modal with 4 modes
+- Highlight AI agent indicator
+- Point to entry fees and prizes
+SAY: "Compete in Battle Arena - USDC entry, NAG prizes, AI anti-cheat active"
+
+FEATURES (1:45-2:00)
+- Quick cuts:
+  * Jupiter swap modal (show token selector)
+  * Telegram bot interface (send /start command)
+  * Settings panel (show wallet address)
+SAY: "Built-in DEX, Telegram bot, tier system - all on Solana"
+
+CLOSING (2:00-2:05)
+- Show token address again (large text)
+- Show Twitter handle
+- Show Telegram bot link
+SAY: "Join the arcade revolution - links in description"
+
+---
+
+RECORDING NOTES:
+- Use OBS Studio or Loom
+- Record in 1080p (1920x1080)
+- Show cursor movements clearly
+- Use upbeat arcade-style background music (80s synth)
+- Add text overlays for:
+  * Token address
+  * Website URL
+  * Social media handles
+- Keep cursor movements smooth
+- Pause 1-2 seconds on important screens
+- Use zoom-in effect for small text
+- Export in MP4 format
+- Upload to YouTube (unlisted or public)
+
+BACKGROUND MUSIC SUGGESTIONS:
+- "Pixel Peeker Polka" by Kevin MacLeod
+- "8 Bit Dungeon Level" by Kevin MacLeod
+- "Wallpaper" by Kevin MacLeod
+- Or search "arcade music royalty free" on YouTube Audio Library
+
+TEXT OVERLAYS TO ADD:
+[0:15] CA: [TOKEN_ADDRESS]
+[0:45] Buy at: pump.fun/[TOKEN_ADDRESS]
+[1:00] Min Required: 100,000 $NAG
+[1:30] Entry: USDC | Prizes: $NAG
+[1:55] Play: [YOUR_NETLIFY_URL]
+[1:57] @[YOUR_TWITTER]
+[1:59] t.me/[YOUR_BOT]
+
+EDITING TIPS:
+- Cut out any loading screens
+- Speed up slow parts (1.5x)
+- Add transitions between sections (quick glitch effect)
+- Color grade for arcade feel (boost purples, cyans)
+- Add sound effects on button clicks
+- Keep total under 2 minutes
