@@ -1,0 +1,18 @@
+.crt { position: relative; border: 1px solid #1e2236; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,255,255,0.12); }
+.crt::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0, rgba(255,255,255,0.04) 1px, transparent 2px); mix-blend-mode: overlay; pointer-events: none; }
+.crt::before { content: ""; position: absolute; inset: -20%; background: radial-gradient(circle at 50% -20%, rgba(0,255,255,0.15), transparent 40%); pointer-events: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

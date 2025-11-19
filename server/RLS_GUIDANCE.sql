@@ -1,0 +1,6 @@
+-- Supabase RLS guidance (run in Supabase SQL editor)
+-- Enable RLS on profiles table and create policies so only the owner can read/write their row via JWT 'sub' mapping.
+-- For example:
+-- alter table profiles enable row level security;
+-- create policy "profiles: owner can manage" on profiles for all using (auth.uid() = address);
+-- Note: In the server we use service role key to bypass RLS. For edge functions, use JWT mapping.

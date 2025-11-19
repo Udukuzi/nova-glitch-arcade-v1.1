@@ -1,0 +1,198 @@
+// Sound effects utility for Nova Arcade Glitch
+
+class SoundManager {
+  private sounds: Map<string, HTMLAudioElement> = new Map()
+  private musicEnabled: boolean = true
+  private sfxEnabled: boolean = true
+  private currentMusic: HTMLAudioElement | null = null
+  private audioContext: AudioContext | null = null
+  private isUnlocked: boolean = false
+
+  constructor() {
+    // Load sound preference from localStorage
+    const musicPref = localStorage.getItem('nova_music_enabled')
+    const sfxPref = localStorage.getItem('nova_sfx_enabled')
+    
+    this.musicEnabled = musicPref !== 'false'
+    this.sfxEnabled = sfxPref !== 'false'
+
+    // Initialize AudioContext on first user interaction
+    this.initAudioContext()
+  }
+
+  private initAudioContext(): void {
+    try {
+      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
+      
+      // Unlock audio on first user interaction
+      const unlockAudio = () => {
+        if (this.audioContext && this.audioContext.state === 'suspended') {
+          this.audioContext.resume().then(() => {
+            this.isUnlocked = true
+            console.log('✅ Audio context unlocked')
+          })
+        } else if (this.audioContext) {
+          this.isUnlocked = true
+        }
+      }
+
+      // Listen for user interactions to unlock audio
+      document.addEventListener('click', unlockAudio, { once: true })
+      document.addEventListener('touchstart', unlockAudio, { once: true })
+      document.addEventListener('keydown', unlockAudio, { once: true })
+    } catch (e) {
+      console.warn('AudioContext initialization failed:', e)
+    }
+  }
+
+  // Create sound using Web Audio API
+  private createBeep(frequency: number, duration: number, type: OscillatorType = 'sine'): void {
+    if (!this.sfxEnabled) return
+
+    try {
+      // Ensure AudioContext exists and is resumed
+      if (!this.audioContext) {
+        this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
+      }
+
+      // Resume context if suspended
+      if (this.audioContext.state === 'suspended') {
+        this.audioContext.resume()
+      }
+
+      const oscillator = this.audioContext.createOscillator()
+      const gainNode = this.audioContext.createGain()
+
+      oscillator.connect(gainNode)
+      gainNode.connect(this.audioContext.destination)
+
+      oscillator.frequency.value = frequency
+      oscillator.type = type
+
+      gainNode.gain.setValueAtTime(0.3, this.audioContext.currentTime)
+      gainNode.gain.exponentialRampToValueAtTime(0.01, this.audioContext.currentTime + duration)
+
+      oscillator.start(this.audioContext.currentTime)
+      oscillator.stop(this.audioContext.currentTime + duration)
+    } catch (e) {
+      console.warn('Audio not supported:', e)
+    }
+  }
+
+  // Play button click sound
+  playClick(): void {
+    this.createBeep(800, 0.1, 'square')
+  }
+
+  // Play game start sound
+  playGameStart(): void {
+    if (!this.sfxEnabled) return
+    this.createBeep(523, 0.1, 'sine') // C note
+    setTimeout(() => this.createBeep(659, 0.1, 'sine'), 100) // E note
+    setTimeout(() => this.createBeep(784, 0.2, 'sine'), 200) // G note
+  }
+
+  // Play game over sound
+  playGameOver(): void {
+    if (!this.sfxEnabled) return
+    this.createBeep(392, 0.15, 'sine') // G note
+    setTimeout(() => this.createBeep(349, 0.15, 'sine'), 150) // F note
+    setTimeout(() => this.createBeep(294, 0.15, 'sine'), 300) // D note
+    setTimeout(() => this.createBeep(262, 0.3, 'sine'), 450) // C note
+  }
+
+  // Play success/achievement sound
+  playSuccess(): void {
+    if (!this.sfxEnabled) return
+    this.createBeep(523, 0.1, 'sine')
+    setTimeout(() => this.createBeep(659, 0.1, 'sine'), 80)
+    setTimeout(() => this.createBeep(784, 0.1, 'sine'), 160)
+    setTimeout(() => this.createBeep(1047, 0.2, 'sine'), 240)
+  }
+
+  // Play error sound
+  playError(): void {
+    if (!this.sfxEnabled) return
+    this.createBeep(200, 0.2, 'sawtooth')
+  }
+
+  // Play coin/point sound
+  playCoin(): void {
+    if (!this.sfxEnabled) return
+    this.createBeep(1000, 0.05, 'square')
+    setTimeout(() => this.createBeep(1200, 0.1, 'square'), 50)
+  }
+
+  // Toggle music on/off
+  toggleMusic(): boolean {
+    this.musicEnabled = !this.musicEnabled
+    localStorage.setItem('nova_music_enabled', String(this.musicEnabled))
+    
+    if (!this.musicEnabled && this.currentMusic) {
+      this.currentMusic.pause()
+    } else if (this.musicEnabled && this.currentMusic) {
+      this.currentMusic.play().catch(e => console.warn('Music play failed:', e))
+    }
+    
+    // Dispatch event for games to listen to
+    window.dispatchEvent(new CustomEvent('nova_settings_changed', { 
+      detail: { musicEnabled: this.musicEnabled, sfxEnabled: this.sfxEnabled } 
+    }))
+    
+    return this.musicEnabled
+  }
+
+  // Toggle sound effects on/off
+  toggleSFX(): boolean {
+    this.sfxEnabled = !this.sfxEnabled
+    localStorage.setItem('nova_sfx_enabled', String(this.sfxEnabled))
+    
+    // Dispatch event for games to listen to
+    window.dispatchEvent(new CustomEvent('nova_settings_changed', { 
+      detail: { musicEnabled: this.musicEnabled, sfxEnabled: this.sfxEnabled } 
+    }))
+    
+    return this.sfxEnabled
+  }
+
+  // Get current states
+  isMusicEnabled(): boolean {
+    return this.musicEnabled
+  }
+
+  isSFXEnabled(): boolean {
+    return this.sfxEnabled
+  }
+
+  // Manually unlock audio context (for debugging)
+  unlockAudio(): void {
+    if (this.audioContext && this.audioContext.state === 'suspended') {
+      this.audioContext.resume().then(() => {
+        this.isUnlocked = true
+        console.log('✅ Audio manually unlocked')
+      }).catch(e => {
+        console.warn('❌ Failed to unlock audio:', e)
+      })
+    } else {
+      console.log('ℹ️ Audio context state:', this.audioContext?.state)
+    }
+  }
+
+  // Check if audio is unlocked
+  isAudioUnlocked(): boolean {
+    return this.isUnlocked && this.audioContext?.state === 'running'
+  }
+}
+
+// Export singleton instance
+export const soundManager = new SoundManager()
+
+// Auto-unlock on any user interaction (backup)
+if (typeof window !== 'undefined') {
+  const autoUnlock = () => {
+    soundManager.unlockAudio()
+  }
+  window.addEventListener('click', autoUnlock, { once: true })
+  window.addEventListener('touchstart', autoUnlock, { once: true })
+  window.addEventListener('keydown', autoUnlock, { once: true })
+}
