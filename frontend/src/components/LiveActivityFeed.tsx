@@ -31,11 +31,11 @@ export function LiveActivityFeed({
   useEffect(() => {
     const sendHeartbeat = async () => {
       try {
-        const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:5178/api';
+        const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5178';
         const wallet = localStorage.getItem('wallet_address');
         
         if (wallet) {
-          await fetch(`${apiBase}/heartbeat`, {
+          await fetch(`${apiBase}/api/heartbeat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ wallet })
@@ -56,8 +56,8 @@ export function LiveActivityFeed({
   useEffect(() => {
     const fetchOnlineCount = async () => {
       try {
-        const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:5178/api';
-        const response = await fetch(`${apiBase}/stats/online`);
+        const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5178';
+        const response = await fetch(`${apiBase}/api/stats/online`);
         if (response.ok) {
           const data = await response.json();
           setOnlineCount(data.count || 0);
@@ -80,8 +80,8 @@ export function LiveActivityFeed({
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const apiBase = import.meta.env.VITE_API_BASE || 'http://localhost:5178/api';
-        const response = await fetch(`${apiBase}/activity/recent?limit=10`);
+        const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5178';
+        const response = await fetch(`${apiBase}/api/activity/recent?limit=10`);
         if (response.ok) {
           const data = await response.json();
           if (data.activities && data.activities.length > 0) {
