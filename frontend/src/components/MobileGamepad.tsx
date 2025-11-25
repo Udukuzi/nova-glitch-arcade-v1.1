@@ -362,7 +362,9 @@ export default function MobileGamepad({ gameId }: MobileGamepadProps) {
                 boxShadow: '0 4px 12px rgba(0, 255, 136, 0.4)',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                zIndex: 1001,
+                position: 'relative'
               }}
             >
               ↻

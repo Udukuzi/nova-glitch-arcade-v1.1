@@ -36,7 +36,7 @@ export const detectMobileWallet = (): MobileWalletInfo => {
 };
 
 /**
- * Deep link to Phantom mobile app
+ * Deep link to Phantom mobile app with improved connection flow
  */
 export const openPhantomMobile = (url?: string) => {
   const currentUrl = url || window.location.href;
@@ -44,21 +44,24 @@ export const openPhantomMobile = (url?: string) => {
   // Check if in Telegram
   const isTelegram = !!(window as any).Telegram?.WebApp;
   
-  // Use proper deep link format
-  const phantomUrl = `phantom://browse/${encodeURIComponent(currentUrl)}`;
-  const phantomUniversalLink = `https://phantom.app/ul/browse/${encodeURIComponent(currentUrl)}?ref=https://phantom.app`;
+  // Use universal link for better mobile experience (opens in app, not browser)
+  const phantomUniversalLink = `https://phantom.app/ul/browse/${encodeURIComponent(currentUrl)}?ref=nova-arcade`;
+  
+  // Try universal link first (most reliable)
+  window.location.href = phantomUniversalLink;
   
   if (isTelegram) {
     // In Telegram, use openLink to open external URLs
     (window as any).Telegram.WebApp.openLink(phantomUniversalLink);
   } else {
-    // Try deep link first, then universal link
-    window.location.href = phantomUrl;
+    // Try universal link first (most reliable)
+    window.location.href = phantomUniversalLink;
     
-    // Fallback to universal link after short delay
+    // Fallback to deep link after short delay
     setTimeout(() => {
-      window.location.href = phantomUniversalLink;
-    }, 500);
+      const phantomDeepLink = `phantom://browse/${encodeURIComponent(currentUrl)}`;
+      window.location.href = phantomDeepLink;
+    }, 1000);
     
     // Fallback to app store if Phantom doesn't open
     setTimeout(() => {

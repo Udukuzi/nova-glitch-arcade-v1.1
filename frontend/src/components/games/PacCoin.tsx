@@ -103,11 +103,11 @@ export default function PacCoin({ onGameOver, difficulty = 'medium' }: PacCoinPr
     // Detect mobile for speed adjustment
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth <= 768
     
-    // Difficulty-based speeds (lower = faster)
+    // Difficulty-based speeds (higher = slower, better for mobile touch controls)
     const speedSettings = {
-      easy: { pacman: isMobile ? 4 : 2, ghost: isMobile ? 8 : 5 },
-      medium: { pacman: isMobile ? 3 : 1, ghost: isMobile ? 6 : 3 },
-      hard: { pacman: isMobile ? 3 : 1, ghost: isMobile ? 4 : 2 }
+      easy: { pacman: isMobile ? 3 : 2, ghost: isMobile ? 6 : 5 },
+      medium: { pacman: isMobile ? 4 : 1, ghost: isMobile ? 8 : 3 },
+      hard: { pacman: isMobile ? 4 : 1, ghost: isMobile ? 6 : 2 }
     }
     
     const PACMAN_MOVE_INTERVAL = speedSettings[difficulty].pacman
