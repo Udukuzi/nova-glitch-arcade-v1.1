@@ -47,9 +47,6 @@ export const openPhantomMobile = (url?: string) => {
   // Use universal link for better mobile experience (opens in app, not browser)
   const phantomUniversalLink = `https://phantom.app/ul/browse/${encodeURIComponent(currentUrl)}?ref=nova-arcade`;
   
-  // Try universal link first (most reliable)
-  window.location.href = phantomUniversalLink;
-  
   if (isTelegram) {
     // In Telegram, use openLink to open external URLs
     (window as any).Telegram.WebApp.openLink(phantomUniversalLink);

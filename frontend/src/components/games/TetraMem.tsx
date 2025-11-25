@@ -2,7 +2,6 @@ import { useRef, useState, useEffect } from 'react'
 import '../Scanlines.css'
 import AIMonitoringIndicator, { useAIMonitoring } from '../AIMonitoringIndicator'
 import PauseButton from '../PauseButton'
-import MobileTouchControls from '../MobileTouchControls'
 import { usePause } from '../../hooks/usePause'
 
 interface TetraMemProps {
@@ -496,27 +495,7 @@ export default function TetraMem({ onGameOver }: TetraMemProps) {
     }
   }, [onGameOver, isPaused, currentSpeedMultiplier])
 
-  // Mobile touch handlers - dispatch keyboard events
-  const handleMobileLeft = () => {
-    const event = new KeyboardEvent('keydown', { code: 'ArrowLeft' })
-    window.dispatchEvent(event)
-  }
-
-  const handleMobileRight = () => {
-    const event = new KeyboardEvent('keydown', { code: 'ArrowRight' })
-    window.dispatchEvent(event)
-  }
-
-  const handleMobileDown = () => {
-    const event = new KeyboardEvent('keydown', { code: 'ArrowDown' })
-    window.dispatchEvent(event)
-  }
-
-  const handleMobileRotate = () => {
-    const event = new KeyboardEvent('keydown', { code: 'ArrowUp' })
-    window.dispatchEvent(event)
-  }
-
+  
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '100%', maxWidth: '100%' }}>
       <PauseButton 
@@ -544,15 +523,6 @@ export default function TetraMem({ onGameOver }: TetraMemProps) {
         status={status} 
         position="bottom-left" 
         size="small" 
-      />
-      
-      {/* Mobile Touch Controls */}
-      <MobileTouchControls
-        gameName="TetraMem"
-        onLeft={handleMobileLeft}
-        onRight={handleMobileRight}
-        onDown={handleMobileDown}
-        onRotate={handleMobileRotate}
       />
     </div>
   )
