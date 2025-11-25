@@ -36,7 +36,7 @@ app.use(helmet({
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://nova-arcade.vercel.app', 'https://nova-arcade.netlify.app', /.+\.netlify\.app$/] 
+    ? ['https://nova-arcade.vercel.app', 'https://nova-arcade.netlify.app', /.+\.netlify\.app$/, 'https://novarcadeglitch.dev'] 
     : true,
   credentials: true
 }));
