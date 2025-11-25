@@ -81,6 +81,11 @@ export default function MobileGamepad({ gameId }: MobileGamepadProps) {
 
   if (!isMobile) return null
 
+  // Disable global controls for games with their own controls
+  if (gameId === 'tetramem') {
+    return null
+  }
+  
   // Flappy Nova gets a special single-button control
   if (gameId === 'flappy') {
     return (
